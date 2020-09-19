@@ -1,0 +1,228 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-09-19T08:21:45.043Z",
+        "line": 15,
+        "name": "Places to get added successfully",
+        "description": "",
+        "id": "placevaliadtions;places-to-get-added-successfully;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3415380700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Place payload and Query Param \"beauty\"  \"english\"  \"123 street nm road\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "beauty",
+                  "offset": 31
+                },
+                {
+                  "val": "english",
+                  "offset": 41
+                },
+                {
+                  "val": "123 street nm road",
+                  "offset": 52
+                }
+              ],
+              "location": "stepDefinition.MyStepDefinitions.place_payload_and_query_param_something_something_something(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "\"AddPlaceApi\" is called with \"POST\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "AddPlaceApi",
+                  "offset": 1
+                },
+                {
+                  "val": "POST",
+                  "offset": 30
+                }
+              ],
+              "location": "stepDefinition.MyStepDefinitions.user_is_called_with_any_http_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat stepDefinition.MyStepDefinitions.successful_something_in_body_is_something(MyStepDefinitions.java:78)\r\n\tat ✽.successful \"status\" in body is \"OK\"(file:///C:/Users/sdeep/eclipse-workspace/RestAutomation/src/test/java/features/AddPlaceValidations.feature:7)\r\n",
+              "duration": 8050900,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "successful \"status\" in body is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "status",
+                  "offset": 12
+                },
+                {
+                  "val": "OK",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinition.MyStepDefinitions.successful_something_in_body_is_something(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "\"scope\" of the body is \"APP\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "scope",
+                  "offset": 1
+                },
+                {
+                  "val": "APP",
+                  "offset": 24
+                }
+              ],
+              "location": "stepDefinition.MyStepDefinitions.something_of_the_body_is_something(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "verify that Placeid created maps to \"beauty\"  using \"GetPlaceApi\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "beauty",
+                  "offset": 37
+                },
+                {
+                  "val": "GetPlaceApi",
+                  "offset": 53
+                }
+              ],
+              "location": "stepDefinition.MyStepDefinitions.verify_that_placeid_created_maps_to_something_using_something(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Addplace"
+          },
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-09-19T08:21:48.631Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "java.lang.IllegalArgumentException: No enum constant resources.enumResources.addPlaceAPI\r\n\tat java.base/java.lang.Enum.valueOf(Enum.java:264)\r\n\tat resources.enumResources.valueOf(enumResources.java:3)\r\n\tat stepDefinition.MyStepDefinitions.user_is_called_with_any_http_request(MyStepDefinitions.java:56)\r\n\tat stepDefinition.Hooks.beforescenario(Hooks.java:17)\r\n",
+              "duration": 18610400,
+              "status": "failed"
+            },
+            "match": {
+              "location": "stepDefinition.Hooks.beforescenario()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Places to be deleted successfully",
+        "description": "",
+        "id": "placevaliadtions;places-to-be-deleted-successfully",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "place payload with placeid",
+            "match": {
+              "location": "stepDefinition.MyStepDefinitions.place_payload_with_placeid()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "\"DeletePlaceApi\" is called with \"DELETE\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "DeletePlaceApi",
+                  "offset": 1
+                },
+                {
+                  "val": "DELETE",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinition.MyStepDefinitions.user_is_called_with_any_http_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "successful \"status\" in body is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "status",
+                  "offset": 12
+                },
+                {
+                  "val": "OK",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinition.MyStepDefinitions.successful_something_in_body_is_something(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Deleteplace"
+          },
+          {
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "PlaceValiadtions",
+    "description": "",
+    "id": "placevaliadtions",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/AddPlaceValidations.feature",
+    "tags": []
+  }
+]

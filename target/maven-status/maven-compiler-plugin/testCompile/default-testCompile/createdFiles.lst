@@ -1,0 +1,8 @@
+Test\AddPlace.class
+Test\OAuth_2.class
+Test\serialisation.class
+Test\AddLibrary.class
+Test\CourseTitles.class
+cucumber\Options\TestRunner.class
+Test\StaticJsonFromFile.class
+Test\Deserialisation.class
